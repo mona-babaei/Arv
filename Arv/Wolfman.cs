@@ -1,18 +1,18 @@
 ﻿
-namespace Arv
-{
-
+namespace Arv;
 
 
 
     public class Wolfman : Wolf, IPerson
     {
-        public Wolfman(string name, double weight, int age, string packName) : base(name, weight, age, packName);
+        public void Wolfman (string name, double weight, int age, string packName) : base(name, weight, age,pakname);
+       
 
-        public void Talk()
+     public static Talk ()
+
+
         {
             Console.WriteLine("I'm a wolfman!");
-            
         }
     }
-}
+
