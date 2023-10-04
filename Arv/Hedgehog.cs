@@ -1,11 +1,11 @@
 ﻿namespace Arv;
 public class Hedgehog : Animal
 {
-    public int NrOfSpikes { get; set; }  // En unik egenskap för Hedgehog
+    public int Spikes { get; set; }  // En unik egenskap för Hedgehog
 
-    public Hedgehog(string name, double weight, int age, int nrOfSpikes) : base(name, weight, age)
+    public Hedgehog(string name, double weight, int age, int spikes) : base(name, weight, age)
     {
-        NrOfSpikes = nrOfSpikes;
+        Spikes = spikes;
     }
 
     public override void DoSound() => Console.WriteLine("Sniff");

@@ -1,18 +1,30 @@
-﻿
+﻿using System;
 namespace Arv;
+
 
 
 
     public class Wolfman : Wolf, IPerson
     {
-        public void Wolfman (string name, double weight, int age, string packName) : base(name, weight, age,pakname);
-       
+        public Wolfman(string name, double weight, int age, string packName) : base(name, weight, age, packName) { }
 
-     public static Talk ()
-
-
+        public string Talk()
         {
             Console.WriteLine("I'm a wolfman!");
+            return "I am a wolfman";
         }
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
 

@@ -8,13 +8,12 @@ public class Wolf : Animal
         PackName = packName;
     }
 
-    public Wolf(string name, double weight, int age) : base(name, weight, age)
-    {
-    }
-
     public override void DoSound() => Console.WriteLine("Howl");
 
-    public interface IPerson
+    public override string Stats()
     {
+        return base.Stats() + $", PackName:{PackName}";
     }
+    
+    
 }

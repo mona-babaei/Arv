@@ -24,13 +24,12 @@ public class Dog : Animal, IPerson
         return base.Stats() + $", Breed: {Breed}";
     }
 
-    void IPerson.Talk()
-    {
-        throw new NotImplementedException();
-    }
+   
+
+        
 }
 
-
+ 
 
 
 //public class Dog : Animal
